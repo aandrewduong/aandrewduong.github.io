@@ -1,88 +1,118 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  
   <title>Andrew Duong</title>
   <meta name="description" content="Portfolio of Andrew Duong">
-  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Source+Sans+Pro:400,700,200,300|Josefin+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Source+Sans+Pro:400,700|Josefin+Sans:400,600,700" rel="stylesheet">
+  
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+  <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
   <div class="wrapper">
     <div class="home" style="margin-top:40px">
       <div>
-        <img alt="image" style="width:180px;float:left;margin-bottom:20px;margin-right:20px;" src="https://media.licdn.com/dms/image/v2/D5603AQFrPvAkXkZEoQ/profile-displayphoto-shrink_400_400/B56ZUS95B9GUAg-/0/1739779969419?e=1745452800&v=beta&t=GOW23i-7X9fY3Xnd1QqlxH2WXs2A-UDMFkOAc-OsOoQ">
+        <img alt="Profile Picture" style="width:180px;float:left;margin-bottom:20px;margin-right:20px;" 
+          src="https://media.licdn.com/dms/image/v2/D5603AQFrPvAkXkZEoQ/profile-displayphoto-shrink_400_400/B56ZUS95B9GUAg-/0/1739779969419?e=1745452800&v=beta&t=GOW23i-7X9fY3Xnd1QqlxH2WXs2A-UDMFkOAc-OsOoQ">
         <h1>ANDREW DUONG</h1>
-        <p>aandrewduong@ucla.edu</p>
+        <p><a href="mailto:aandrewduong@ucla.edu">aandrewduong@ucla.edu</a></p>
         <p>
-          <a href="https://github.com/aandrewduong">Github</a> | 
-          <a href="https://www.linkedin.com/in/andrew-duong-sj77/">LinkedIn</a> |
-          <a href="">Resume</a>
+          <a href="https://github.com/aandrewduong">GitHub</a> | 
+          <a href="https://www.linkedin.com/in/andrew-duong-sj77/">LinkedIn</a> | 
+          <a href="#">Resume |</a>
         </p>
       </div>
     </div>
 
     <div style="clear:left">
       <h2>BIO</h2>
-      <div>
-        <p>
-          I am a third-year undergraduate student at the University of California, Los Angeles, pursuing a Bachelor’s degree in Computer Science & Linguistics. Originally from San Jose, CA, I began my academic journey at De Anza College, where I built a strong foundation in computer science before transferring to UCLA. My interests lie at the intersection of technology and language, with a focus on machine learning, natural language processing, computational linguistics, and AI-driven language models. I am also interested in sports analytics, blockchain technology, and technical writing. My experience includes frontend and backend development, automation tools, and data structures, allowing me to build and optimize scalable applications. I am passionate about solving complex problems, learning new technologies, and exploring how AI can enhance human communication. Expected to graduate in Spring 2026, I am excited to continue growing as a developer, researcher, and problem-solver while working on impactful projects that push the boundaries of technology.
-        </p>
-      </div>
+      <p>
+        I am a third-year undergraduate student at the University of California, Los Angeles, pursuing a 
+        Bachelor’s degree in Computer Science & Linguistics. Originally from San Jose, CA, I started at De Anza College 
+        before transferring to UCLA. My interests lie in machine learning, natural language processing, computational 
+        linguistics, and AI-driven models. I am passionate about solving complex problems, learning new technologies, 
+        and exploring how AI can enhance human communication. Expected to graduate in Spring 2026.
+      </p>
     </div>
+
+    <!-- Projects Section -->
     <div>
       <h2>PROJECTS</h2>
-      <div>
-        <p class="project">
-          <p>
-            <span class="title" style="font-weight:400">Healthy on The Hill</span> - 
-            <a href="https://github.com/aandrewduong/healthyonthehill" target="_blank">[Project Repository]</a>
-          </p>
-          <p>
-            Healthy on The Hill is a web application designed to improve the health and ease of connection for UCLA students living on the Hill. Built using React, JavaScript, Golang, Git, and MongoDB, the platform enables seamless communication and data exchange through robust RESTful APIs. I collaborated with 
-            <a href="https://www.linkedin.com/in/ananya-anand04/" target="_blank">Ananya Anand</a>,
-            <a href="https://www.linkedin.com/in/steven-veld-533baa217/" target="_blank">Steven Veld</a>, 
-            <a href="https://www.linkedin.com/in/gabrielscharff" target="_blank">Gabriel Scharff</a>, 
-            <a href="https://www.linkedin.com/in/anthony-chui-499b31274/" target="_blank">Anthony Chui</a>, and 
-            <a href="https://www.linkedin.com/in/hayleigh-liu/" target="_blank">Hayleigh Liu</a>, utilizing Git for version control to streamline our workflow and ensure efficient project management. Together, we designed an intuitive user interface and implemented backend services to support real-time interactions. Additionally, I leveraged web scraping techniques to dynamically extract and integrate real-time data from UCLA websites, ensuring students have access to up-to-date and relevant information.
-          </p>
-          <p>
-            Healthy on The Hill allows students to connect with gym buddies based on fitness goals and levels, create personalized fitness plans with recommended gym equipment, view live food options on the Hill with meal ratings, and check live activity levels of dining halls and gyms. Through this project, we gained valuable experience in full-stack development, team collaboration, and optimizing web applications for a smooth and responsive user experience.
-          </p>
+      
+      <div class="project">
+        <h3>Healthy on The Hill</h3>
+        <a href="https://github.com/aandrewduong/healthyonthehill" target="_blank">[Project Repository]</a>
+        <p>
+          A web application designed to improve health and connection for UCLA students living on the Hill. Built with 
+          React, JavaScript, Golang, Git, and MongoDB, it enables seamless communication through RESTful APIs. Features 
+          include gym buddy matching, personalized fitness plans, live food ratings, and real-time activity tracking for 
+          dining halls and gyms.
         </p>
-        <p class="project">
-          <span class="title" style="font-weight:400">De Anza User Automation Tool</span> -
-          <a href="https://github.com/aandrewduong/veil" target="_blank">[Project Repository]</a>
-          <p>
-            De Anza User Automation Tool is a full-stack application that streamlines course enrollment at De Anza and Foothill College by automating class tracking and registration. With a Golang backend handling API requests, authentication, and registration logic, and an Electron-based frontend providing an intuitive interface, the tool simplifies the enrollment process. It uses real-time web scraping and HTTP requests to monitor course availability, automatically enrolling students when seats open. Features include Class Search & Export, Unofficial Transcript Retrieval, Rapid Enrollment, and Watch Mode for real-time alerts and automatic sign-ups. Data persistence and user session management ensure a seamless experience.
-          </p>
+      </div>
+
+      <div class="project">
+        <h3>De Anza User Automation Tool</h3>
+        <a href="https://github.com/aandrewduong/veil" target="_blank">[Project Repository]</a>
+        <p>
+          A full-stack application that automates course enrollment at De Anza and Foothill College using a Golang backend 
+          and Electron-based frontend. Features include real-time class tracking, automated enrollment, transcript retrieval, 
+          and session management.
         </p>
       </div>
     </div>
 
     <div>
       <h2>CERTIFICATIONS</h2>
-      <div>
-        <p class="certification">
-          <ul>
-            <li>
-              Programming in C/C++, De Anza College June 2024.
-              <a href="https://www.parchment.com/u/s/ZHpD" target="_blank">[Certification Link]</a>
-            </li>
-            <li>
-              Transfer Studies - IGETC/UC, De Anza College August 2024.
-              <a href="https://www.parchment.com/u/s/ktaS" target="_blank">[Certification Link]</a>
-            </li>
-          </ul>
-        </p>
-      </div>
+      <ul>
+        <li>
+          Programming in C/C++, De Anza College (June 2024).
+          <a href="https://www.parchment.com/u/s/ZHpD" target="_blank">[Certification Link]</a>
+        </li>
+        <li>
+          Transfer Studies - IGETC/UC, De Anza College (August 2024).
+          <a href="https://www.parchment.com/u/s/ktaS" target="_blank">[Certification Link]</a>
+        </li>
+      </ul>
     </div>
-    <i>Acknowledgement: This website uses the design and template from <a href="https://cs.stanford.edu/~ssagawa/">Shiori Sagawa</a>.</i>
+
+    <footer>
+      <i>Website inspired by <a href="https://cs.stanford.edu/~ssagawa/">Shiori Sagawa</a>.</i>
+    </footer>
   </div>
+
+  <script>
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+    const isDarkMode = document.body.classList.contains("dark-mode");
+    localStorage.setItem("darkMode", isDarkMode ? "enabled" : "disabled");
+    document.querySelector(".dark-mode-toggle").textContent = isDarkMode ? "☀️ Light Mode" : "🌙 Dark Mode";
+  }
+
+  (function () {
+    const userPreference = localStorage.getItem("darkMode");
+    const systemPreference = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    if (userPreference === "enabled" || (userPreference === null && systemPreference)) {
+      document.body.classList.add("dark-mode");
+      document.querySelector(".dark-mode-toggle").textContent = "☀️ Light Mode";
+    }
+  })();
+
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", event => {
+    if (!localStorage.getItem("darkMode")) {
+      document.body.classList.toggle("dark-mode", event.matches);
+      document.querySelector(".dark-mode-toggle").textContent = event.matches ? "☀️ Light Mode" : "🌙 Dark Mode";
+    }
+  });
+  </script>
+
 </body>
 </html>
