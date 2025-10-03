@@ -4,91 +4,306 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <title>Andrew Duong</title>
-  <meta name="description" content="Portfolio of Andrew Duong">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Source+Sans+Pro:400,700|Josefin+Sans:400,600,700" rel="stylesheet">
-  
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-  
+
+  <title>Andrew Duong - Computer Science Student & Developer</title>
+  <meta name="description" content="Portfolio of Andrew Duong, a Computer Science and Linguistics student at UCLA specializing in machine learning, NLP, and AI-driven solutions.">
+  <meta name="keywords" content="Andrew Duong, Computer Science, UCLA, Machine Learning, NLP, Portfolio, Developer">
+  <meta name="author" content="Andrew Duong">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aandrewduong.github.io/">
+  <meta property="og:title" content="Andrew Duong - Computer Science Student & Developer">
+  <meta property="og:description" content="Portfolio of Andrew Duong, a Computer Science and Linguistics student at UCLA specializing in machine learning, NLP, and AI-driven solutions.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/135930507?v=4Q">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://aandrewduong.github.io/">
+  <meta property="twitter:title" content="Andrew Duong - Computer Science Student & Developer">
+  <meta property="twitter:description" content="Portfolio of Andrew Duong, a Computer Science and Linguistics student at UCLA specializing in machine learning, NLP, and AI-driven solutions.">
+  <meta property="twitter:image" content="https://media.licdn.com/dms/image/v2/D5603AQFrPvAkXkZEoQ/profile-displayphoto-shrink_400_400/B56ZUS95B9GUAg-/0/1739779969419?e=1745452800&v=beta&t=GOW23i-7X9fY3Xnd1QqlxH2WXs2A-UDMFkOAc-OsOoQ">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
 
-  <div class="wrapper">
-    <div class="home" style="margin-top:40px">
-      <div>
-        <img alt="Profile Picture" style="width:180px;float:left;margin-bottom:20px;margin-right:20px;" 
-          src="https://media.licdn.com/dms/image/v2/D5603AQFrPvAkXkZEoQ/profile-displayphoto-shrink_400_400/B56ZUS95B9GUAg-/0/1739779969419?e=1745452800&v=beta&t=GOW23i-7X9fY3Xnd1QqlxH2WXs2A-UDMFkOAc-OsOoQ">
-        <h1>ANDREW DUONG</h1>
-        <p><a href="mailto:aandrewduong@ucla.edu">aandrewduong@ucla.edu</a></p>
-        <p>
-          <a href="https://github.com/aandrewduong">GitHub</a> | 
-          <a href="https://www.linkedin.com/in/andrew-duong-sj77/">LinkedIn</a> | 
-          <a href="#">Resume |</a>
-        </p>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">AD</div>
+      <ul class="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="Andrew Duong Resume.pdf" target="_blank" class="nav-link resume-link"><i class="fas fa-file-pdf"></i> Resume</a></li>
+      </ul>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
+  </nav>
 
-    <div style="clear:left">
-      <h2>BIO</h2>
-      <p>
-        I am a third-year undergraduate student at the University of California, Los Angeles, pursuing a 
-        Bachelor’s degree in Computer Science & Linguistics. Originally from San Jose, CA, I started at De Anza College 
-        before transferring to UCLA. My interests lie in machine learning, natural language processing, computational 
-        linguistics, and AI-driven models. I am passionate about solving complex problems, learning new technologies, 
-        and exploring how AI can enhance human communication. Expected to graduate in Spring 2026.
-      </p>
-    </div>
+  <div class="wrapper">
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">Hi, I'm <span class="highlight">Andrew Duong</span></h1>
+          <p class="hero-subtitle">Computer Science & Linguistics Student at UCLA</p>
+          <p class="hero-description">
+            Passionate about machine learning, natural language processing, and AI-driven solutions.
+            I love solving complex problems and exploring how technology can enhance human communication.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img alt="Andrew Duong - Profile Picture"
+               src="https://avatars.githubusercontent.com/u/135930507?v=4"
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p>
+          I am a fourth-year undergraduate student at the University of California, Los Angeles, pursuing a
+          Bachelor's degree in Computer Science & Linguistics. Originally from San Jose, CA, I started at De Anza College
+          before transferring to UCLA.
+        </p>
+        <p>
+          My interests lie in machine learning, natural language processing, computational
+          linguistics, and AI-driven models. I am passionate about solving complex problems, learning new technologies,
+          and exploring how AI can enhance human communication. Expected to graduate in Winter 2026.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Go</span>
+            <span class="skill-tag">C/C++</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Web Development</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">MongoDB</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>AI & Machine Learning</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">Computer Vision</span>
+            <span class="skill-tag">Scikit-learn</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Tools & Technologies</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Electron</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Projects Section -->
-    <div>
-      <h2>PROJECTS</h2>
+    <section id="projects" class="section">
+      <h2 class="section-title">Featured Projects</h2>
       
-      <div class="project">
-        <h3>Healthy on The Hill</h3>
-        <a href="https://github.com/aandrewduong/healthyonthehill" target="_blank">[Project Repository]</a>
-        <p>
-          A web application designed to improve health and connection for UCLA students living on the Hill. Built with 
-          React, JavaScript, Golang, Git, and MongoDB, it enables seamless communication through RESTful APIs. Features 
-          include gym buddy matching, personalized fitness plans, live food ratings, and real-time activity tracking for 
-          dining halls and gyms.
-        </p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Healthy on The Hill</h3>
+            <div class="project-links">
+              <a href="https://github.com/aandrewduong/healthyonthehill" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> Repository
+              </a>
+            </div>
+          </div>
+          <p class="project-description">
+            A comprehensive web application designed to improve health and foster connections for UCLA students living on campus.
+            Built with modern web technologies to enable seamless communication through RESTful APIs.
+          </p>
+          <div class="project-features">
+            <span class="feature-tag">Gym Buddy Matching</span>
+            <span class="feature-tag">Personalized Fitness Plans</span>
+            <span class="feature-tag">Live Food Ratings</span>
+            <span class="feature-tag">Real-time Activity Tracking</span>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Go</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>De Anza User Automation Tool</h3>
+            <div class="project-links">
+              <a href="https://github.com/aandrewduong/veil" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> Repository
+              </a>
+            </div>
+          </div>
+          <p class="project-description">
+            A full-stack automation tool that streamlines course enrollment processes at De Anza and Foothill College,
+            featuring a robust Golang backend and modern Electron frontend.
+          </p>
+          <div class="project-features">
+            <span class="feature-tag">Real-time Class Tracking</span>
+            <span class="feature-tag">Automated Enrollment</span>
+            <span class="feature-tag">Transcript Retrieval</span>
+            <span class="feature-tag">Session Management</span>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Go</span>
+            <span class="tech-tag">Electron</span>
+            <span class="tech-tag">Full-stack</span>
+            <span class="tech-tag">Automation</span>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="project">
-        <h3>De Anza User Automation Tool</h3>
-        <a href="https://github.com/aandrewduong/veil" target="_blank">[Project Repository]</a>
-        <p>
-          A full-stack application that automates course enrollment at De Anza and Foothill College using a Golang backend 
-          and Electron-based frontend. Features include real-time class tracking, automated enrollment, transcript retrieval, 
-          and session management.
-        </p>
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="education-timeline">
+        <div class="education-item">
+          <div class="education-header">
+            <h3>University of California, Los Angeles (UCLA)</h3>
+            <span class="education-date">2024 - 2026</span>
+          </div>
+          <p class="education-degree">Bachelor of Science in Computer Science & Linguistics</p>
+          <p class="education-description">
+            Focusing on machine learning, natural language processing, and computational linguistics.
+            Expected graduation: Winter 2026 (March).
+          </p>
+          <div class="education-highlights">
+            <span class="highlight-tag">Machine Learning</span>
+            <span class="highlight-tag">Natural Language Processing</span>
+            <span class="highlight-tag">Computational Linguistics</span>
+          </div>
+        </div>
+
+        <div class="education-item">
+          <div class="education-header">
+            <h3>De Anza College</h3>
+            <span class="education-date">2022 - 2024</span>
+          </div>
+          <p class="education-degree">Associate Degree - Transfer Studies</p>
+          <p class="education-description">
+            Completed coursework in computer science fundamentals, mathematics, and general education requirements.
+          </p>
+          <div class="certifications">
+            <h4>Certifications Earned:</h4>
+            <ul>
+              <li>
+                <strong>Programming in C/C++</strong> (June 2024)
+                <a href="https://www.parchment.com/u/s/ZHpD" target="_blank" class="cert-link">[View Certificate]</a>
+              </li>
+              <li>
+                <strong>Transfer Studies - IGETC/UC</strong> (August 2024)
+                <a href="https://www.parchment.com/u/s/ktaS" target="_blank" class="cert-link">[View Certificate]</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div>
-      <h2>CERTIFICATIONS</h2>
-      <ul>
-        <li>
-          Programming in C/C++, De Anza College (June 2024).
-          <a href="https://www.parchment.com/u/s/ZHpD" target="_blank">[Certification Link]</a>
-        </li>
-        <li>
-          Transfer Studies - IGETC/UC, De Anza College (August 2024).
-          <a href="https://www.parchment.com/u/s/ktaS" target="_blank">[Certification Link]</a>
-        </li>
-      </ul>
-    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <p class="contact-intro">
+          I'm always interested in new opportunities, collaborations, and connecting with fellow developers and researchers.
+          Feel free to reach out!
+        </p>
 
-    <footer>
-      <i>Website inspired by <a href="https://cs.stanford.edu/~ssagawa/">Shiori Sagawa</a>.</i>
-    </footer>
-  </div>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>Email</strong><br>
+              <a href="mailto:aandrewduong@ucla.edu">aandrewduong@ucla.edu</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <div>
+              <strong>LinkedIn</strong><br>
+              <a href="https://www.linkedin.com/in/andrew-duong-sj77/" target="_blank">Andrew Duong</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <div>
+              <strong>GitHub</strong><br>
+              <a href="https://github.com/aandrewduong" target="_blank">@aandrewduong</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-actions">
+          <a href="mailto:aandrewduong@ucla.edu" class="btn btn-primary">
+            <i class="fas fa-envelope"></i> Send Email
+          </a>
+          <a href="https://www.linkedin.com/in/andrew-duong-sj77/" target="_blank" class="btn btn-secondary">
+            <i class="fab fa-linkedin"></i> Connect on LinkedIn
+          </a>
+          <a href="Andrew Duong Resume.pdf" target="_blank" class="btn btn-secondary">
+            <i class="fas fa-file-pdf"></i> View Resume
+          </a>
+        </div>
+      </div>
+    </section>
 
   <script>
+  // Dark mode functionality
   function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
     const isDarkMode = document.body.classList.contains("dark-mode");
@@ -96,6 +311,7 @@
     document.querySelector(".dark-mode-toggle").textContent = isDarkMode ? "☀️ Light Mode" : "🌙 Dark Mode";
   }
 
+  // Initialize dark mode
   (function () {
     const userPreference = localStorage.getItem("darkMode");
     const systemPreference = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -106,12 +322,91 @@
     }
   })();
 
+  // Listen for system preference changes
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", event => {
     if (!localStorage.getItem("darkMode")) {
       document.body.classList.toggle("dark-mode", event.matches);
       document.querySelector(".dark-mode-toggle").textContent = event.matches ? "☀️ Light Mode" : "🌙 Dark Mode";
     }
   });
+
+  // Smooth scrolling for navigation
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+
+  // Mobile navigation toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      navToggle.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        navToggle.classList.remove('active');
+      });
+    });
+  }
+
+  // Add scroll animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-in');
+      }
+    });
+  }, observerOptions);
+
+  // Observe all sections
+  document.querySelectorAll('.section').forEach(section => {
+    observer.observe(section);
+  });
+
+  // Update active navigation link on scroll
+  function updateActiveNavLink() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    let current = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${current}`) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveNavLink);
+  updateActiveNavLink(); // Initialize on load
   </script>
 
 </body>
