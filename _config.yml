@@ -1,1 +1,38 @@
-title: Andrew Duong's Homepage
+# Site settings
+title: "Andrew Duong - Computer Science Student & Developer"
+description: "Portfolio of Andrew Duong, a Computer Science and Linguistics student at UCLA specializing in machine learning, NLP, and AI-driven solutions."
+url: "https://aandrewduong.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+
+# Include files
+include:
+  - _pages
+
+# Collections
+collections:
+  projects:
+    output: true
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# GitHub Pages
+repository: aandrewduong/aandrewduong.github.io
+github_username: aandrewduong
