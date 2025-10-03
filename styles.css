@@ -476,6 +476,9 @@ body.dark-mode .hero-section {
   color: var(--link-color);
   font-weight: 600;
   margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .education-description {
