@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Andrew Duong</title>
-  <meta name="description" content="Personal portfolio and academic page of Andrew Duong.">
+  <title>CV | Andrew Duong</title>
+  <meta name="description" content="Curriculum Vitae of Andrew Duong.">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +41,7 @@
   <main class="max-w-6xl mx-auto px-6 py-12">
     <div class="grid grid-cols-1 lg:grid-cols-[320px_1fr] gap-12">
       
-      <!-- Sidebar (Profile Card) -->
+      <!-- Sidebar -->
       <aside class="flex flex-col gap-6">
         <div class="sticky top-24">
           <div class="mb-6">
@@ -66,22 +66,58 @@
       <!-- Content Area -->
       <div class="flex flex-col gap-16">
 
-        <!-- About / Intro -->
-        <section id="about" class="reveal active">
-          <h2 class="section-title">About Me</h2>
-          <div class="prose dark:prose-invert max-w-none text-slate-700 dark:text-slate-400 leading-relaxed space-y-4">
-            <p>
-              This is a sample paragraph describing your background and current academic status. Mention your major, university, and key areas of interest.
-            </p>
-            <p>
-              Describe your current professional role or internships here. Talk about the impact you're making and the technologies you work with daily.
-            </p>
-            <p>
-              Share your broader interests in the tech world, such as specific protocols, design philosophies, or emerging trends that excite you.
-            </p>
-            <p class="text-sm italic">
-              Sample fun fact or personal note goes here.
-            </p>
+        <!-- Header -->
+        <section id="cv-header" class="reveal active flex justify-between items-center">
+          <h2 class="section-title mb-0">Curriculum Vitae</h2>
+          <a href="files/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline text-sm">
+            <i class="fas fa-file-pdf"></i> Download PDF
+          </a>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="reveal">
+          <h2 class="section-title">Professional Experience</h2>
+          <div class="space-y-8">
+            <div class="border-l-4 border-academic-link pl-4">
+              <div class="flex flex-col gap-1">
+                <h3 class="font-semibold text-slate-900 dark:text-white text-lg">Sample Job Title</h3>
+                <p class="text-sm text-slate-500 dark:text-slate-400"><strong>Organization Name</strong> • Date Range</p>
+              </div>
+              <p class="text-sm text-slate-600 dark:text-slate-400 mt-3 leading-relaxed">
+                Describe your key responsibilities and measurable impact in this role. Focus on the tools you used and the problems you solved.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="reveal">
+          <h2 class="section-title">Education</h2>
+          <div class="space-y-8">
+            <div class="border-l-4 border-academic-link pl-4">
+              <div class="flex flex-col gap-1">
+                <h3 class="font-semibold text-slate-900 dark:text-white text-lg">University Name</h3>
+                <p class="text-sm text-slate-500 dark:text-slate-400">Degree Type • Expected Date</p>
+              </div>
+              <p class="text-sm text-slate-600 dark:text-slate-400 mt-3 leading-relaxed">
+                Mention relevant coursework, research projects, GPA, or extracurricular leadership roles.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="reveal">
+          <h2 class="section-title">Skills & Expertise</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <p class="text-xs font-bold text-primary uppercase tracking-widest mb-3">Languages & Frameworks</p>
+              <p class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">Skill A, Skill B, Skill C, Skill D, Skill E</p>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-primary uppercase tracking-widest mb-3">Tools & DevOps</p>
+              <p class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">Tool A, Tool B, Tool C, Tool D, Tool E</p>
+            </div>
           </div>
         </section>
 
@@ -89,6 +125,8 @@
     </div>
   </main>
 
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+

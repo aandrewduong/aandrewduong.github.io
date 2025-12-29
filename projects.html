@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Andrew Duong</title>
-  <meta name="description" content="Personal portfolio and academic page of Andrew Duong.">
+  <title>Projects | Andrew Duong</title>
+  <meta name="description" content="Sample projects layout.">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,28 +66,44 @@
       <!-- Content Area -->
       <div class="flex flex-col gap-16">
 
-        <!-- About / Intro -->
-        <section id="about" class="reveal active">
-          <h2 class="section-title">About Me</h2>
-          <div class="prose dark:prose-invert max-w-none text-slate-700 dark:text-slate-400 leading-relaxed space-y-4">
-            <p>
-              This is a sample paragraph describing your background and current academic status. Mention your major, university, and key areas of interest.
-            </p>
-            <p>
-              Describe your current professional role or internships here. Talk about the impact you're making and the technologies you work with daily.
-            </p>
-            <p>
-              Share your broader interests in the tech world, such as specific protocols, design philosophies, or emerging trends that excite you.
-            </p>
-            <p class="text-sm italic">
-              Sample fun fact or personal note goes here.
-            </p>
+        <!-- Featured Projects -->
+        <section id="featured" class="reveal active">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="space-y-6">
+            <div class="border border-academic-border dark:border-neutral-800 rounded-lg p-6 hover:shadow-md transition-shadow">
+              <div class="flex justify-between items-start gap-4 mb-3">
+                <div>
+                  <h3 class="font-bold text-lg text-slate-900 dark:text-white">Sample Project Title</h3>
+                  <p class="text-xs text-slate-500 dark:text-slate-400">Tech Stack • Category</p>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
+                Detailed description of the project, including the problem it solves, the technologies used, and your specific role in building it.
+              </p>
+              <div class="flex gap-4 items-center">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="text-sm text-academic-link hover:underline font-medium"><i class="fab fa-github"></i> View Repository</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Other Projects -->
+        <section id="other-projects" class="reveal">
+          <h2 class="section-title">Other Projects</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-4 border border-academic-border dark:border-neutral-800 rounded-lg hover:shadow-sm transition-shadow">
+              <h3 class="font-semibold text-slate-900 dark:text-white mb-2">Sample Smaller Project</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mb-2">Tech • Tools</p>
+              <p class="text-sm text-slate-600 dark:text-slate-400 mb-3">Short description of a side project or smaller tool.</p>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="text-xs text-academic-link hover:underline"><i class="fab fa-github"></i> GitHub</a>
+            </div>
           </div>
         </section>
 
       </div>
     </div>
   </main>
+
 
   <script src="assets/js/main.js"></script>
 </body>

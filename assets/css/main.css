@@ -1,0 +1,63 @@
+/* Standard CSS for Page Transitions (Independent of Tailwind processing) */
+main {
+  opacity: 0;
+  transform: translateX(20px);
+  /* Use a slight delay to ensure the browser has started rendering */
+  animation: pageIn 0.6s cubic-bezier(0.2, 0, 0.2, 1) 0.1s forwards;
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+              transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  will-change: opacity, transform;
+}
+
+.fade-out {
+  opacity: 0 !important;
+  transform: translateX(-30px) !important;
+  pointer-events: none;
+}
+
+@keyframes pageIn {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Tailwind Components */
+@layer components {
+  .reveal {
+    @apply opacity-0 translate-y-4 transition-all duration-500 ease-out;
+  }
+  .reveal.active {
+    @apply opacity-100 translate-y-0;
+  }
+  .nav-link {
+    @apply text-sm font-medium hover:text-academic-link transition-all duration-200 relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-academic-link transition-all duration-300;
+  }
+  
+  .nav-link:hover::after, .nav-link.text-academic-link::after {
+    @apply w-full;
+  }
+
+  .section-title {
+    @apply text-2xl font-bold border-b border-academic-border dark:border-neutral-800 pb-2 mb-6 text-slate-900 dark:text-white;
+  }
+  .post-link {
+    @apply text-academic-link hover:underline font-semibold text-lg;
+  }
+  .sidebar-link {
+    @apply flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400 hover:text-academic-link transition-colors py-1;
+  }
+
+  .tab-pulse {
+    animation: tabPulse 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @keyframes tabPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.92); opacity: 0.6; }
+    100% { transform: scale(1); }
+  }
+}
