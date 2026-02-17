@@ -1,0 +1,26 @@
+- title: veil-cli
+  description: A command-line tool that automates class searches, enrollment, and seat monitoring for De Anza and Foothill College. Built with Go for performance and reliability, optimizing the enrollment workflow using direct HTTP requests.
+  icon: fas fa-code
+  tags: [Go, Automation]
+  repo: https://github.com/aandrewduong/veil-cli
+  featured: true
+
+- title: vulgar-nlp
+  description: A BERT-based NLP classifier designed to detect vulgar language in text. Implemented in Python using the Hugging Face Transformers library, achieving high accuracy in content moderation tasks.
+  icon: fas fa-brain
+  tags: [Python, BERT, NLP]
+  repo: https://github.com/aandrewduong/vulgar-nlp
+  featured: true
+
+- title: asyncio-proxy-herd
+  description: A low-latency, 5-node GPS tracking network built with Python's asyncio and integrated with the Google Places API. Designed for high throughput and efficient communication across distributed nodes.
+  icon: fas fa-network-wired
+  tags: [Python, AsyncIO, GPS]
+  repo: https://github.com/aandrewduong/asyncio-proxy-herd
+  featured: true
+
+
+
+
+
+

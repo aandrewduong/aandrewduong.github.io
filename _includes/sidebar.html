@@ -1,0 +1,43 @@
+<aside class="flex flex-col gap-8">
+  <div class="sticky top-24">
+    {% if page.url == "/" or page.url == "/index.html" %}
+    <div class="relative group mb-8">
+      <div class="absolute -inset-1 bg-gradient-to-r from-primary to-academic-accent rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+      <img src="https://avatars.githubusercontent.com/u/135930507?v=4" alt="{{ site.data.profile.name }}" class="relative w-full aspect-square rounded-full object-cover shadow-2xl border-4 border-white dark:border-dark-lighter">
+    </div>
+    {% endif %}
+    
+    <div class="mb-8">
+      <h1 class="text-3xl font-black tracking-tight mb-2 text-slate-900 dark:text-white">
+        {% if page.sidebar_title %}{{ page.sidebar_title }}{% else %}{{ site.data.profile.name }}{% endif %}
+      </h1>
+      {% if page.sidebar_description %}
+        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+          {{ page.sidebar_description }}
+        </p>
+      {% else %}
+        <div class="space-y-3">
+          <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+            <i class="fas fa-briefcase opacity-50"></i>
+            <span>{{ site.data.profile.title | replace: 'Illumio', '<strong>Illumio</strong>' }}</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+            <i class="fas fa-graduation-cap opacity-50"></i>
+            <span>{{ site.data.profile.education | replace: "UCLA '26", "<strong>UCLA '26</strong>" }}</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+            <i class="fas fa-map-marker-alt opacity-50"></i>
+            <span>{{ site.data.profile.location }}</span>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="flex flex-col gap-1 pt-6 border-t border-academic-border dark:border-dark-border">
+      <a href="mailto:{{ site.data.profile.email }}" class="sidebar-link"><i class="fas fa-envelope w-5 opacity-70"></i> Email</a>
+      <a href="{{ site.data.profile.socials.linkedin }}" target="_blank" rel="noopener noreferrer" class="sidebar-link"><i class="fab fa-linkedin w-5 opacity-70"></i> LinkedIn</a>
+      <a href="{{ site.data.profile.socials.github }}" target="_blank" rel="noopener noreferrer" class="sidebar-link"><i class="fab fa-github w-5 opacity-70"></i> GitHub</a>
+    </div>
+  </div>
+</aside>
+

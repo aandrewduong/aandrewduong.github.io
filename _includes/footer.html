@@ -1,0 +1,16 @@
+<footer class="border-t border-academic-border dark:border-dark-border mt-20">
+  <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-slate-500 dark:text-slate-400">
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.data.profile.name }}</p>
+    <div class="flex items-center gap-6">
+      <a href="mailto:{{ site.data.profile.email }}" class="hover:text-primary transition-colors" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="{{ site.data.profile.socials.linkedin }}" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="{{ site.data.profile.socials.github }}" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,40 @@
+<nav class="sticky top-0 w-full h-16 bg-white/80 dark:bg-dark/80 backdrop-blur-md z-[1000] border-b border-academic-border dark:border-dark-border">
+  <div class="max-w-6xl mx-auto px-6 h-full flex justify-between items-center">
+    <a href="{{ '' | relative_url }}/" class="font-extrabold text-xl tracking-tighter text-primary">AD</a>
+
+    <!-- Desktop nav -->
+    <div class="hidden sm:flex items-center gap-8">
+      <ul class="flex gap-8">
+        <li><a href="{{ '' | relative_url }}/" class="nav-link">About</a></li>
+        <li><a href="{{ 'blog.html' | relative_url }}" class="nav-link">Blog</a></li>
+        <li><a href="{{ 'projects.html' | relative_url }}" class="nav-link">Projects</a></li>
+        <li><a href="{{ 'cv.html' | relative_url }}" class="nav-link">CV</a></li>
+      </ul>
+      <div class="h-6 w-px bg-academic-border dark:bg-dark-border"></div>
+      <button onclick="toggleDarkMode()" aria-label="Toggle dark mode" class="theme-toggle text-slate-400 hover:text-primary transition-colors">
+        <i class="fas fa-moon text-lg"></i>
+      </button>
+    </div>
+
+    <!-- Mobile hamburger button -->
+    <button id="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu" class="sm:hidden text-slate-600 dark:text-slate-300 hover:text-primary transition-colors">
+      <i class="fas fa-bars text-xl"></i>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="mobile-menu sm:hidden hidden">
+    <ul class="flex flex-col gap-1 px-6 py-4">
+      <li><a href="{{ '' | relative_url }}/" class="nav-link block py-2">About</a></li>
+      <li><a href="{{ 'blog.html' | relative_url }}" class="nav-link block py-2">Blog</a></li>
+      <li><a href="{{ 'projects.html' | relative_url }}" class="nav-link block py-2">Projects</a></li>
+      <li><a href="{{ 'cv.html' | relative_url }}" class="nav-link block py-2">CV</a></li>
+    </ul>
+    <div class="border-t border-academic-border dark:border-dark-border mx-6"></div>
+    <div class="px-6 py-4">
+      <button onclick="toggleDarkMode()" aria-label="Toggle dark mode" class="theme-toggle text-slate-500 dark:text-slate-400 hover:text-primary transition-colors flex items-center gap-3 text-sm">
+        <i class="fas fa-moon text-lg"></i> Toggle dark mode
+      </button>
+    </div>
+  </div>
+</nav>
